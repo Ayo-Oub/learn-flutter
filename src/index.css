@@ -84,8 +84,8 @@ body {
   font-family: var(--font-sans);
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  direction: rtl;
-  text-align: right;
+  direction: ltr;
+  text-align: left;
   min-height: 100vh;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -318,7 +318,7 @@ a:hover {
 
 .search-icon {
   position: absolute;
-  right: 14px;
+  left: 14px;
   top: 50%;
   transform: translateY(-50%);
   color: var(--text-muted);
@@ -329,7 +329,7 @@ a:hover {
 
 .search-input {
   width: 100%;
-  padding: 10px 42px 10px 14px;
+  padding: 10px 14px 10px 42px;
   font-family: var(--font-sans);
   font-size: 14px;
   border: 1px solid var(--border-color);
@@ -337,7 +337,7 @@ a:hover {
   color: var(--text-primary);
   border-radius: 10px;
   transition: all 0.25s ease;
-  text-align: right;
+  text-align: left;
 }
 
 .search-input:focus {
@@ -557,11 +557,10 @@ a:hover {
   width: 14px;
   height: 14px;
   transition: transform 0.2s ease;
-  transform: scaleX(-1); /* Points left for Arabic but let's make it interactively slide */
 }
 
 .widget-card:hover .arrow-icon {
-  transform: scaleX(-1) translateX(4px);
+  transform: translateX(4px);
 }
 
 /* ==========================================================================
@@ -843,13 +842,13 @@ a:hover {
   align-items: flex-start;
   transition: all 0.25s ease;
   font-family: var(--font-sans);
-  text-align: right;
+  text-align: left;
   max-width: 320px;
 }
 
 .nav-footer-btn.next {
   align-items: flex-end;
-  text-align: left;
+  text-align: right;
 }
 
 .nav-footer-btn span:first-child {
