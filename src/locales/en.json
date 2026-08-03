@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Home",
+    "lessons": "Lessons",
+    "about": "About",
+    "language": "Language",
+    "start": "Get started"
+  },
+  "footer": {
+    "tagline": "Learn Flutter and Dart, one lesson at a time — free and open source.",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Dart & Flutter",
+      "title": "Learn Flutter, one widget at a time.",
+      "subtitle": "Detailed write-ups, real code samples, and links to the official docs to really understand how to build apps with Flutter.",
+      "ctaPrimary": "Start learning",
+      "ctaSecondary": "Browse the catalog",
+      "statLessons": "lessons",
+      "statCategories": "categories",
+      "statFree": "100% free"
+    },
+    "features": {
+      "title": "Why FlutterLearn?",
+      "interactiveTitle": "Real examples",
+      "interactiveText": "Every widget page comes with real Dart code snippets, ready to copy into your own project.",
+      "progressiveTitle": "Tracked progress",
+      "progressiveText": "Your progress is saved locally, lesson by lesson, so you can pick up right where you left off.",
+      "bilingualTitle": "Multilingual",
+      "bilingualText": "The interface is available in French, English, and Arabic — learn in whichever language suits you."
+    },
+    "preview": {
+      "title": "A few widgets to explore",
+      "cta": "See the full catalog"
+    },
+    "cta": {
+      "title": "Ready to write your first widget?",
+      "subtitle": "No install needed to get started — head to the first widget.",
+      "button": "Start now"
+    }
+  },
+  "lessons": {
+    "title": "The widget catalog",
+    "subtitle": "Every essential Flutter widget, explained with code samples and a link to the official docs."
+  },
+  "catalog": {
+    "searchPlaceholder": "Search a widget (e.g. Scaffold)…",
+    "filterAll": "All",
+    "statusDone": "Done",
+    "statusTodo": "In progress",
+    "cta": "Start learning",
+    "ctaDone": "Review lesson",
+    "empty": "No results for this search."
+  },
+  "lessonDetail": {
+    "back": "Back to lessons",
+    "previous": "Previous lesson",
+    "next": "Next lesson",
+    "markDone": "Mark as done",
+    "done": "Done",
+    "notFound": "This lesson doesn't exist.",
+    "backHome": "Back to home",
+    "officialDocs": "Official Flutter documentation"
+  },
+  "about": {
+    "title": "About FlutterLearn",
+    "missionTitle": "Our mission",
+    "mission": "FlutterLearn is a free, open-source site for learning Flutter and Dart step by step, with short write-ups, real code, and links to the official docs — no unnecessary jargon.",
+    "stackTitle": "Built with",
+    "contactTitle": "A question or a suggestion?",
+    "contactText": "This project is meant to grow with its readers. Feel free to suggest new lessons."
+  },
+  "notFound": {
+    "title": "404",
+    "message": "This page doesn't exist, or not anymore.",
+    "cta": "Back to home"
+  },
+  "common": {
+    "loading": "Loading…"
+  }
+}

@@ -1,0 +1,76 @@
+.lesson-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+}
+.lesson-card:hover {
+  text-decoration: none;
+  transform: translateY(-3px);
+  border-color: var(--color-sky);
+  box-shadow: var(--shadow-glow);
+}
+
+.lesson-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.lesson-card__category {
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.lesson-card__category--layout { background: var(--color-sky-dim); color: var(--color-sky); }
+.lesson-card__category--basics { background: var(--color-green-dim); color: var(--color-green); }
+.lesson-card__category--styling { background: var(--color-violet-dim); color: var(--color-violet); }
+
+.lesson-card__status {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-faint);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 999px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+.lesson-card__status--done {
+  color: var(--color-green);
+  border-color: rgba(91, 231, 169, 0.35);
+}
+
+.lesson-card__title {
+  font-size: var(--fs-h3);
+  color: var(--color-paper);
+  margin-bottom: 4px;
+}
+.lesson-card__tagline {
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-sky);
+  margin-bottom: var(--space-3);
+}
+.lesson-card__summary {
+  font-size: var(--fs-small);
+  margin-bottom: var(--space-4);
+  flex-grow: 1;
+}
+
+.lesson-card__footer {
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+.lesson-card__cta {
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-sky);
+}
+.lesson-card:hover .lesson-card__cta { text-decoration: underline; }

@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "lessons": "Leçons",
+    "about": "À propos",
+    "language": "Langue",
+    "start": "Commencer"
+  },
+  "footer": {
+    "tagline": "Apprendre Flutter et Dart, une leçon à la fois — gratuit et open source.",
+    "rights": "Tous droits réservés."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Dart & Flutter",
+      "title": "Apprends Flutter, un widget à la fois.",
+      "subtitle": "Des fiches détaillées, des exemples de code concrets et des liens vers la documentation officielle pour vraiment comprendre comment construire des applications avec Flutter.",
+      "ctaPrimary": "Commencer l'apprentissage",
+      "ctaSecondary": "Explorer le catalogue",
+      "statLessons": "leçons",
+      "statCategories": "catégories",
+      "statFree": "100% gratuit"
+    },
+    "features": {
+      "title": "Pourquoi FlutterLearn ?",
+      "interactiveTitle": "Exemples concrets",
+      "interactiveText": "Chaque fiche widget est illustrée par des extraits de code Dart réels, prêts à être copiés dans ton propre projet.",
+      "progressiveTitle": "Progression suivie",
+      "progressiveText": "Ta progression est enregistrée localement, leçon après leçon, pour reprendre exactement où tu t'es arrêté.",
+      "bilingualTitle": "Multilingue",
+      "bilingualText": "L'interface est disponible en français, en anglais et en arabe — apprends dans la langue qui te convient."
+    },
+    "preview": {
+      "title": "Quelques widgets à découvrir",
+      "cta": "Voir tout le catalogue"
+    },
+    "cta": {
+      "title": "Prêt à écrire ton premier widget ?",
+      "subtitle": "Aucune installation requise pour commencer : direction le premier widget.",
+      "button": "Démarrer maintenant"
+    }
+  },
+  "lessons": {
+    "title": "Le catalogue de widgets",
+    "subtitle": "Chaque widget Flutter essentiel, expliqué avec des exemples de code et un lien vers la documentation officielle."
+  },
+  "catalog": {
+    "searchPlaceholder": "Recherchez un widget (ex: Scaffold)…",
+    "filterAll": "Tous",
+    "statusDone": "Terminé",
+    "statusTodo": "En cours",
+    "cta": "Commencer l'apprentissage",
+    "ctaDone": "Revoir la leçon",
+    "empty": "Aucun résultat pour cette recherche."
+  },
+  "lessonDetail": {
+    "back": "Retour aux leçons",
+    "previous": "Leçon précédente",
+    "next": "Leçon suivante",
+    "markDone": "Marquer comme terminée",
+    "done": "Terminée",
+    "notFound": "Cette leçon n'existe pas.",
+    "backHome": "Retour à l'accueil",
+    "officialDocs": "Documentation officielle Flutter"
+  },
+  "about": {
+    "title": "À propos de FlutterLearn",
+    "missionTitle": "Notre mission",
+    "mission": "FlutterLearn est un site gratuit et open source pour apprendre Flutter et Dart pas à pas, avec des fiches courtes, du code concret et des liens vers la documentation officielle — sans jargon inutile.",
+    "stackTitle": "Construit avec",
+    "contactTitle": "Une question, une suggestion ?",
+    "contactText": "Ce projet est fait pour évoluer avec ses lecteurs. N'hésite pas à proposer de nouvelles leçons."
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Cette page n'existe pas, ou plus.",
+    "cta": "Retour à l'accueil"
+  },
+  "common": {
+    "loading": "Chargement…"
+  }
+}

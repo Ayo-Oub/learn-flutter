@@ -1,0 +1,57 @@
+.lesson-detail__back {
+  display: inline-block;
+  font-size: var(--fs-small);
+  color: var(--color-muted);
+  margin-bottom: var(--space-5);
+}
+.lesson-detail__back:hover { color: var(--color-sky); text-decoration: none; }
+
+.lesson-detail__complete {
+  margin: var(--space-6) 0;
+  max-width: 760px;
+}
+
+.lesson-detail__pager {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  max-width: 760px;
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+}
+.lesson-detail__pager-link {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+.lesson-detail__pager-link:hover {
+  border-color: var(--color-sky);
+  text-decoration: none;
+}
+.lesson-detail__pager-link--prev { text-align: start; align-items: start; }
+.lesson-detail__pager-link--next { text-align: end; align-items: end; }
+.lesson-detail__pager-label {
+  font-size: var(--fs-caption, 0.75rem);
+  color: var(--color-faint);
+  font-family: var(--font-mono);
+}
+.lesson-detail__pager-title { color: var(--color-paper); font-weight: 600; font-size: var(--fs-small); }
+
+.lesson-missing {
+  padding: var(--space-8) 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+@media (max-width: 640px) {
+  .lesson-detail__pager { grid-template-columns: 1fr; }
+  .lesson-detail__pager-link--next { text-align: start; align-items: start; }
+}

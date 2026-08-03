@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Tajawal:wght@400;500;700&display=swap");
+@import "./variables.css";
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ink);
+  background-image:
+    linear-gradient(var(--color-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-attachment: fixed;
+  color: var(--color-paper);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 var(--space-3);
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0 0 var(--space-3); color: var(--color-muted); }
+
+a {
+  color: var(--color-sky);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+code, pre { font-family: var(--font-mono); }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img { max-width: 100%; display: block; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+/* Accessibilité : focus clavier toujours visible */
+:focus-visible {
+  outline: 2px solid var(--color-sky);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Respect des préférences de mouvement réduit */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--color-sky-dim);
+  color: var(--color-paper);
+}
+
+/* Scrollbar discrète, cohérente avec le thème */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--color-ink); }
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-alt);
+  border-radius: 8px;
+  border: 2px solid var(--color-ink);
+}
+
+/* ==========================================================================
+   Catalogue (page Lessons) : barre de recherche + filtres partagés
+   ========================================================================== */
+.catalog-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.catalog-search {
+  position: relative;
+  flex: 1 1 320px;
+  min-width: 220px;
+}
+.catalog-search__icon {
+  position: absolute;
+  inset-inline-start: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--color-faint);
+  pointer-events: none;
+}
+.catalog-search input {
+  width: 100%;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  padding-block: 11px;
+  padding-inline-start: 44px;
+  padding-inline-end: 16px;
+  color: var(--color-paper);
+  font-family: inherit;
+  font-size: var(--fs-small);
+}
+.catalog-search input::placeholder { color: var(--color-faint); }
+.catalog-search input:focus-visible { outline: none; border-color: var(--color-sky); }
+/* neutralise l'UI native des <input type="search"> (Chrome/Safari) */
+.catalog-search input::-webkit-search-cancel-button,
+.catalog-search input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; }
+
+.catalog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.filter-pill {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  color: var(--color-muted);
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast);
+  white-space: nowrap;
+}
+.filter-pill:hover { color: var(--color-paper); border-color: var(--color-sky); }
+.filter-pill--active {
+  background: var(--color-sky);
+  border-color: var(--color-sky);
+  color: var(--color-ink);
+}
+.filter-pill--active:hover { color: var(--color-ink); }
+
+.catalog-empty {
+  color: var(--color-faint);
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  text-align: center;
+}
+
+/* Arabe (RTL) : Tajawal a une bien meilleure couverture des glyphes arabes
+   que Space Grotesk / Inter, qui n'en incluent pas. */
+html[dir="rtl"] body,
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4 {
+  font-family: "Tajawal", "Inter", sans-serif;
+}

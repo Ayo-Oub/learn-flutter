@@ -1,0 +1,37 @@
+.lesson-content {
+  max-width: 760px;
+}
+.lesson-content__eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--color-sky);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-2);
+}
+.lesson-content__header h1 { margin-bottom: var(--space-2); }
+.lesson-content__summary { font-size: 1.05rem; margin-bottom: var(--space-3); }
+.lesson-content__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  margin-bottom: var(--space-5);
+}
+.lesson-content__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-sky);
+}
+.lesson-content__link:hover { text-decoration: underline; }
+.lesson-content__link--primary { color: var(--color-amber); }
+.lesson-content__text { color: var(--color-paper); opacity: 0.92; }
+.lesson-content__figure { margin: var(--space-4) 0; }
+.lesson-content__figure figcaption {
+  font-size: var(--fs-small);
+  color: var(--color-faint);
+  margin-top: var(--space-2);
+  text-align: center;
+}
