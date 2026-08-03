@@ -12,6 +12,7 @@ import textStyle from "./text-style";
 import boxDecoration from "./box-decoration";
 import edgeInsets from "./edge-insets";
 import themeData from "./theme-data";
+import expanded from "./expanded";
 
 /**
  * Export centralisé du catalogue de widgets.
@@ -34,4 +35,5 @@ export const lessons = [
   boxDecoration,
   edgeInsets,
   themeData,
+  expanded
 ];
