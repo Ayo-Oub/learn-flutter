@@ -16,17 +16,32 @@ import NotFound from "../pages/NotFound";
  */
 export default function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/learn-flutter">
       <Routes>
         <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/lessons" element={<Lessons />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<NotFound />} />
+          <Route
+            path="/"
+            element={<Home />}
+          />
+          <Route
+            path="/lessons"
+            element={<Lessons />}
+          />
+          <Route
+            path="/about"
+            element={<About />}
+          />
+          <Route
+            path="*"
+            element={<NotFound />}
+          />
         </Route>
 
         <Route element={<LessonLayout />}>
-          <Route path="/lessons/:lessonId" element={<LessonDetail />} />
+          <Route
+            path="/lessons/:lessonId"
+            element={<LessonDetail />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>
