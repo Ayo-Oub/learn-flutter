@@ -6,7 +6,7 @@ import "./LessonContent.css";
 
 /**
  * Rend le contenu structuré d'une fiche widget (lesson.blocks[]).
- * Types de bloc supportés : "text" | "heading" | "code" | "image"
+ * Types de bloc supportés : "text" | "heading" | "code" | "image" | "source"
  * Champs optionnels : docsUrl (lien doc officielle), links[] ({ label, url })
  */
 export default function LessonContent({ lesson }) {
@@ -60,6 +60,19 @@ export default function LessonContent({ lesson }) {
             return <h2 key={i}>{block.content}</h2>;
           case "code":
             return <CodeBlock key={i} code={block.code} language={block.language} title={block.title} />;
+          case "source":
+            return (
+              <a
+                key={i}
+                className="lesson-content__source"
+                href={block.code}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="lesson-content__source-title">{block.title}</span>
+                <span className="lesson-content__source-arrow" aria-hidden="true">↗</span>
+              </a>
+            );
           case "image":
             return (
               <figure key={i} className="lesson-content__figure">

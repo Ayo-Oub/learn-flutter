@@ -24,8 +24,7 @@ export default {
       type: "code",
       title: "expanded_example.dart",
       language: "dart",
-      code:
-        "Row(\n  children: [\n    const Icon(Icons.search),\n    const SizedBox(width: 8),\n    Expanded(\n      child: TextField(\n        decoration: const InputDecoration(hintText: 'Rechercher...'),\n      ),\n    ),\n  ],\n)\n",
+      code: "Row(\n  children: [\n    const Icon(Icons.search),\n    const SizedBox(width: 8),\n    Expanded(\n      child: TextField(\n        decoration: const InputDecoration(hintText: 'Rechercher...'),\n      ),\n    ),\n  ],\n)\n",
     },
     { type: "heading", content: "Répartir l'espace avec flex" },
     {
@@ -37,8 +36,7 @@ export default {
       type: "code",
       title: "expanded_flex_ratio.dart",
       language: "dart",
-      code:
-        "Row(\n  children: [\n    Expanded(\n      flex: 2,\n      child: Container(height: 60, color: Colors.indigo),\n    ),\n    const SizedBox(width: 8),\n    Expanded(\n      flex: 1,\n      child: Container(height: 60, color: Colors.amber),\n    ),\n  ],\n)\n",
+      code: "Row(\n  children: [\n    Expanded(\n      flex: 2,\n      child: Container(height: 60, color: Colors.indigo),\n    ),\n    const SizedBox(width: 8),\n    Expanded(\n      flex: 1,\n      child: Container(height: 60, color: Colors.amber),\n    ),\n  ],\n)\n",
     },
     { type: "heading", content: "Expanded vs Flexible" },
     {
@@ -50,8 +48,29 @@ export default {
       type: "code",
       title: "expanded_vs_flexible.dart",
       language: "dart",
-      code:
-        "Row(\n  children: [\n    // Occupe tout l'espace qui lui est attribué\n    Expanded(child: Container(height: 40, color: Colors.indigo)),\n    // Ne prend que la taille de son enfant, dans la limite de l'espace restant\n    Flexible(child: Container(width: 60, height: 40, color: Colors.amber)),\n  ],\n)\n",
+      code: "Row(\n  children: [\n    // Occupe tout l'espace qui lui est attribué\n    Expanded(child: Container(height: 40, color: Colors.indigo)),\n    // Ne prend que la taille de son enfant, dans la limite de l'espace restant\n    Flexible(child: Container(width: 60, height: 40, color: Colors.amber)),\n  ],\n)\n",
+    },
+    {
+      type: "text",
+      content: "Autres sources d'information",
+    },
+    {
+      type: "source",
+      title: "Claude - Expanded",
+      language: "dart",
+      code: "https://claude.ai/share/64f30347-8116-4055-9baa-538ade12fd54",
+    },
+    {
+      type: "source",
+      title: "ChatGPT - Expanded",
+      language: "dart",
+      code: "https://chatgpt.com/s/t_6a707bf5fbc481919454d1791946e220",
+    },
+    {
+      type: "source",
+      title: "YouTube - Expanded",
+      language: "dart",
+      code: "https://www.youtube.com/watch?v=aHT7HF8sV14",
     },
   ],
 };

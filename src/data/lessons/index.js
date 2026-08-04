@@ -35,5 +35,5 @@ export const lessons = [
   boxDecoration,
   edgeInsets,
   themeData,
-  expanded
+  expanded,
 ];
