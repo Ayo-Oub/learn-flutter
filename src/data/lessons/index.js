@@ -13,6 +13,10 @@ import boxDecoration from "./box-decoration";
 import edgeInsets from "./edge-insets";
 import themeData from "./theme-data";
 import expanded from "./expanded";
+import flexible from "./flexible";
+import stack from "./single-child-scroll-view";
+import listView from "./list-view";
+import listViewBuilder from "./list-view-builder";
 
 /**
  * Export centralisé du catalogue de widgets.
@@ -36,4 +40,8 @@ export const lessons = [
   edgeInsets,
   themeData,
   expanded,
+  flexible,
+  stack,
+  listView,
+  listViewBuilder
 ];
