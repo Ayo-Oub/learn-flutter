@@ -24,8 +24,7 @@ export default {
       type: "code",
       title: "list_view_example.dart",
       language: "dart",
-      code:
-        "ListView(\n  padding: const EdgeInsets.all(16),\n  children: const [\n    ListTile(title: Text('Premier élément')),\n    ListTile(title: Text('Deuxième élément')),\n    ListTile(title: Text('Troisième élément')),\n  ],\n)\n",
+      code: "ListView(\n  padding: const EdgeInsets.all(16),\n  children: const [\n    ListTile(title: Text('Premier élément')),\n    ListTile(title: Text('Deuxième élément')),\n    ListTile(title: Text('Troisième élément')),\n  ],\n)\n",
     },
     { type: "heading", content: "Liste horizontale et séparateurs" },
     {
@@ -37,14 +36,19 @@ export default {
       type: "code",
       title: "list_view_separated.dart",
       language: "dart",
-      code:
-        "ListView.separated(\n  itemCount: items.length,\n  separatorBuilder: (context, index) => const Divider(height: 1),\n  itemBuilder: (context, index) => ListTile(title: Text(items[index])),\n)\n",
+      code: "ListView.separated(\n  itemCount: items.length,\n  separatorBuilder: (context, index) => const Divider(height: 1),\n  itemBuilder: (context, index) => ListTile(title: Text(items[index])),\n)\n",
     },
     { type: "heading", content: "Quand éviter ListView" },
     {
       type: "text",
       content:
         "Pour une liste longue ou dont le nombre d'éléments n'est pas connu à l'avance (des résultats de recherche, un fil d'actualité), préfère ListView.builder : il ne construit que les éléments visibles à l'écran, au fur et à mesure du défilement, ce qui évite de payer le coût de construction de milliers de widgets inutiles (voir la fiche dédiée à ListView.builder).",
+    },
+    {
+      type: "source",
+      title: "ChatGPT - ListView",
+      language: "dart",
+      code: "https://chatgpt.com/s/t_6a71e9f877208191b8158982ecee0960",
     },
   ],
 };
